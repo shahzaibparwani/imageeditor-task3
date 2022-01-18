@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="file-upload-section" onclick="selectImage()" >
+    <input type="file" id="foto-file">
+    select Image
+  </div>
+
+  <div class="img-container">
+      <img id="foto-image" class="image" >
+  </div>
+
+  <div class="buttons-section">
+      <table class="buttons-table">
+          <tr>
+              <td>
+                  <button class="operation-btn" onclick="makeBright()">bright</button>
+              </td>
+
+              <td>
+                <button class="operation-btn" onclick="text()">text</button>
+                <form >
+                    <input type="text"  id="message">
+                    <input type="button" value="add" onclick="add()" >
+                </form>
+              </td>
+          </tr>
+      </table>
+
+  </div>
+
+
+  <script src="app.js"></script>
+  <script src="https://rawcdn.githack.com/kousik19/foto.js/d604b02c69b6f037875bc4a3050b85d776dc4659/foto.js"></script>
+</body>
+</html>
